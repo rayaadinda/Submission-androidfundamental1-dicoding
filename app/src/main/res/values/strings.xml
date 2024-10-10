@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dicoding Event App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Upcoming</string>
+    <string name="title_notifications">Finished</string>
+    <string name="Finished">Finished Events</string>
+    <string name="Upcoming">Upcoming Events</string>
+    <string name="title_upcoming">Dicoding Upcoming Events</string>
+    <string name="title_finished">Finished Events</string>
+    <string name="title_h2">Recommendation Event For You!</string>
+    <string name="button_register">REGISTER</string>
+    <string name="search_events">Search events</string>
+    <string name="todo">TODO</string>
+    <string name="Header">header_cover\n</string>
+    <string name="log_id">No event ID provided</string>
+    <string name="event_image">event</string>
+
+</resources>
