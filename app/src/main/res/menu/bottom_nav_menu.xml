@@ -4,16 +4,33 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/home"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+        android:textColor="?attr/colorOnPrimary"
+        />
+
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/upcoming"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_dashboard"
+        android:textColor="?attr/colorOnPrimary"/>
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/checked"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_notifications"
+        android:textColor="?attr/colorOnPrimary"/>
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/star"
+        android:title="@string/title_favorite"
+        android:textColor="?attr/colorOnPrimary"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/settings"
+        android:title="@string/title_settings"
+        android:textColor="?attr/colorOnPrimary"/>
 
 </menu>
