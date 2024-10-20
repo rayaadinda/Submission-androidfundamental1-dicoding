@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -67,8 +68,16 @@ class HomeFragment : Fragment() {
             finishedEventsAdapter.submitList(events)
         }
 
-        viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
-            binding.loadingIndicator.visibility = if (isLoading) View.VISIBLE else View.GONE
+        viewModel.isLoadingUpcoming.observe(viewLifecycleOwner) { isLoading ->
+            binding.progressBarUpcoming.visibility = if (isLoading) View.VISIBLE else View.GONE
+        }
+
+        viewModel.isLoadingFinished.observe(viewLifecycleOwner) { isLoading ->
+            binding.progressBarFinished.visibility = if (isLoading) View.VISIBLE else View.GONE
+        }
+
+        viewModel.error.observe(viewLifecycleOwner) { errorMessage ->
+            Toast.makeText(context, errorMessage, Toast.LENGTH_LONG).show()
         }
     }
 
